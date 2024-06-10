@@ -1,0 +1,15 @@
+{
+	"name": "taskmanager",
+	"version": "1.0.0",
+	"main": "server.js",
+	"license": "MIT",
+	"dependencies": {
+		"concurrently": "^8.2.0"
+	},
+	"scripts": {
+		"client": "yarn --cwd client dev",
+		"server": " nodemon  server/server.js",
+		"dev": "concurrently \"yarn server\" \"yarn client\""
+	},
+	"packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
+}
